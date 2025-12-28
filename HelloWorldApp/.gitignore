@@ -1,0 +1,9 @@
+*.dll
+*.pdb
+*.json
+*.exe
+*.targets
+*.props
+*.cache
+bin/
+obj/
