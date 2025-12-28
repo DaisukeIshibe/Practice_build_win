@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ViewTimeSeries"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+        Title="Point &amp; Figure Chart Viewer" Height="600" Width="1000">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="File">
+                <MenuItem Header="Open CSV" Click="OpenCsvMenuItem_Click"/>
+                <MenuItem Header="Generate Test Data" Click="GenerateTestDataMenuItem_Click"/>
+            </MenuItem>
+        </Menu>
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            <Canvas x:Name="ChartCanvas" Width="2000" Height="2000" Background="White"/>
+        </ScrollViewer>
+    </DockPanel>
 </Window>
